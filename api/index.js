@@ -33,7 +33,7 @@ app.get('/api/transactions',async(req,res)=>{
   res.json(transactions)
 
 })
-
-app.listen(5000, () => {
+port=process.env.PORT || 5000;
+app.listen(port, () => {
   console.log("server started on port 5000");
 });
